@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício2</title>
+</head>
+<body>
+    <!--
+    Elabore um  programa que calcule a equação de 2ºgrau.
+    regras: Delta=B²-4.a.c
+    -Se delta menor que zero não tem raiz.
+    -Se delta igual a zero tem raiz.
+    -Se delta maior que zero tem duas raízes.
+-->
+
+<script>
+    var a, b, c, delta, x, x1, x2;
+    a=parseFloat(prompt("digite o valor de a: "));
+    b=parseFloat(prompt("digite o valor de b: "));
+    c=parseFloat(prompt("digite o valor de c: "));
+    delta=b*b-(4*a*c)
+   
+    if (delta<0){
+        alert ("não há raízes")
+    }
+
+
+   else if(delta>0){
+        x1= (-b+Math.sqrt(delta))/(2*a)
+        x2= (-b-Math.sqrt(delta))/(2*a)
+        alert("duas raízes")
+        alert("a primeira raíz é igual a: " +x1)
+        alert("a segunda raiz é igual a: " +x2)
+    }
+    
+</script>
+
+</body>
+</html>
